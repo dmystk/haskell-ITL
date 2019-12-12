@@ -1,3 +1,3 @@
-# Changelog for haskell-template
+# Changelog for temporal-logic
 
 ## Unreleased changes
