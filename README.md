@@ -12,7 +12,7 @@ This package contains the following ITL operator:
 - `until`
 - etc.
 
-Here is example for writing a predicate `○□(H > 2)` in ITL and applying it to an interval [1 .. 10].
+Here is example for writing a predicate `○□(H >= 2)` in ITL and applying it to an interval [1 .. 10].
 
 ```
 import ITL
