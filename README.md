@@ -1,6 +1,7 @@
 # Haskell ITL Package
 
 This is Interval Temporal Logic (ITL) package for haskell.
+
 Please read [this paper](http://antonio-cau.co.uk/ITL/publications/reports/tempura-book.pdf) for about ITL.
 
 ## Overview
@@ -38,6 +39,7 @@ See `example/Main.hs` for more detail.
 ## Build
 
 Use `stack` for building and running.
+
 For running example, please type these commands on terminal:
 
 ```
