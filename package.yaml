@@ -1,6 +1,6 @@
-name:                temporal-logic
+name:                haskell-itl
 version:             0.1.0.0
-github:              "githubuser/temporal-logic"
+github:              "githubuser/haskell-itl"
 license:             BSD3
 author:              "Author name here"
 maintainer:          "example@example.com"
@@ -26,18 +26,18 @@ library:
   source-dirs: src
 
 executables:
-  temporal-logic-exe:
+  itl-example:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         example
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - temporal-logic
+    - haskell-itl
 
 tests:
-  temporal-logic-doctest:
+  haskell-itl-doctest:
     main:                Doctests.hs
     source-dirs:         test
     ghc-options:
@@ -45,6 +45,6 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - temporal-logic
+    - haskell-itl
     - doctest
     - doctest-discover
