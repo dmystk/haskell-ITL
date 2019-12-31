@@ -5,12 +5,29 @@ import ITL
 
 main :: IO ()
 main =
-    let context = interval [1 .. 10]
+    let -- The interval is the finite sequence of the state, containing one at least.
+        -- You can make any interval through the `interval` function.
+        -- But please be careful that passing empty list is not allowed.
+        context = interval [1 .. 10]
+
     in  do
         putStr "\n\n"
         putStr "For the interval :\n"
         print context
 
+        -- The `head` means the current state, the type is `Integer` in this example.
+        -- For example, `head (interval [1 .. 10])` returns 1.
+
+        -- And you can use usual operators with predicates by adding (.) before the operator.
+        -- So it allows to write like `head .+ const 1` and `head .== const 2`.
+        -- Please notice that here uses `const` to define the constant value.
+
+        -- To evaluate the predicate, (|=) operator is convenient.
+        -- Writing like `interval [1 .. 10] |= <your-predicate>` makes the context clear.
+
+
+        -- Here are some examples.
+        -- Please refer for writing and enjoy the ITL world! :)
 
         putStr "\n\n"
         putStr "These are true.\n\n"
@@ -69,4 +86,6 @@ main =
 
 
         putStr "\n\n"
+
+        -- Thank you for reading! :)
 
